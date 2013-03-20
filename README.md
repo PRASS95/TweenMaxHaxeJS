@@ -17,10 +17,10 @@ The syntax is exactly the same than the original **TweenMax**.
 * **Documentation**: [GreenSock JavaScript API Docs](http://api.greensock.com/js/)
 	
 ## Next
-- cover the whole API of TweenMax/TweenLite.
-- handle all easing easing
-- cover the TimeLine API.
+- Cover the whole API of TweenMax/TweenLite.
+- Handle all easing easing
+- Cover the TimeLine API.
 
 ## Licensing
-TweenMax Haxe JS is released in the *public domain*. **No warranty expressed or implied. use at your own risk.**
-Please check [Greensock's licensing](http://www.greensock.com/licensing/) before using.
+-TweenMax Haxe JS is released in the *public domain*. **No warranty expressed or implied. use at your own risk.**
+-Please check [Greensock's licensing](http://www.greensock.com/licensing/) before using.
