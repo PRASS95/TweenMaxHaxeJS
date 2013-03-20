@@ -21,8 +21,6 @@ extern class TweenMaxHaxe implements ArrayAccess<Dom> {
 	 * @return
 	 */
 	public function new(target: Dynamic, duration: Float, properties: Dynamic) : Void; 
-	//public function TweenMaxHaxe(target: Dynamic, duration: Float, properties: Dynamic) : TweenMaxHaxe; 
-		
 	
 	/**
 	 * [static] Static method for creating a TweenMax instance that tweens backwards -

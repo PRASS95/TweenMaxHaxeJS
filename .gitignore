@@ -1,5 +1,5 @@
-public/
 lib/
+*.hxproj
+.DS_Store
 
-# Other files and folders
-src/Main.as
+
