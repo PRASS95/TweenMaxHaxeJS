@@ -1,12 +1,12 @@
 package tween.easing;
 
 /**
- * Quad
+ * Expo
  * 
  * @author PRASS
  */
-@:native("Quad")
-extern class Quad 
+@:native("Expo")
+extern class Expo 
 {
 
 	public function new() : Void; 

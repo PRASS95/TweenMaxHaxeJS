@@ -1,17 +1,15 @@
 package tween;
 
-import js.Dom;
-
 /**
  * TweenMax for Haxe
- * v0.1
+ * v0.11
  * @author PRASS
  * 
  */
 
 
 @:native("TweenMax") 
-extern class TweenMaxHaxe implements ArrayAccess<Dom> {
+extern class TweenMaxHaxe {
 
 	/**
 	 * Constructor 

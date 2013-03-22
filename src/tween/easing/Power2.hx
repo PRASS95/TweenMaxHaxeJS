@@ -1,12 +1,12 @@
 package tween.easing;
-import js.Dom;
+
 
 /**
  * Power2
  * @author PRASS
  */
 
- @:native("Power2") 
+@:native("Power2") 
 extern class Power2 
 {
 

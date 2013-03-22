@@ -14,7 +14,7 @@ import tween.TweenMaxHaxe;
 class Test 
 {
 	
-	private var _target 	: Dynamic;
+	private var _target : Dynamic;
 	private var _timer 	: Timer;
 	private var _tween 	: TweenMaxHaxe;
 	
@@ -24,7 +24,6 @@ class Test
 	}
 	
 	function new () : Void {
-		
 		
 		_target = untyped $('#target');
 		

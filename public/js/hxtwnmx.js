@@ -101,6 +101,7 @@ Std.random = function(x) {
 	return Math.floor(Math.random() * x);
 }
 var Test = function() {
+	haxe.Log.trace("lol",{ fileName : "Test.hx", lineNumber : 28, className : "Test", methodName : "new"});
 	this._target = $("#target");
 	this._target.on("mouseover",$bind(this,this._over));
 	this._target.on("mouseout",$bind(this,this._out));
