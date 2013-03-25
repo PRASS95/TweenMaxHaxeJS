@@ -5,7 +5,6 @@ package tween.core;
  * @author PRASS
  */
 
-@:native("Animation")
 extern class Animation {
 	
     public function Animation(duration:Float, ?vars:Dynamic):Void;
