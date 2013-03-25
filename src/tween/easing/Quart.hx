@@ -5,7 +5,7 @@ package tween.easing;
  * 
  * @author PRASS
  */
-@:native("Quart")
+
 extern class Quart 
 {
 

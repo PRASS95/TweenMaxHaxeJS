@@ -1,33 +1,32 @@
 package tween.easing;
 
 /**
- * Power0
+ * Sine
+ * Eases with a relatively low power either at the beginning (easeIn), the end (easeOut), or both (easeInOut).
  * @author PRASS
  */
 
-extern class Power0 
+extern class Sine 
 {
 
 	public function new() : Void; 
-
+	
 	/**
-	 * [static] Eases in with a power of 0
+	 * 
 	 * @return
 	 */
 	static public function	easeIn () : Ease;
 
 	/**
-	 * [static] Eases in and then out with a power of 0
+	 * 
 	 * @return
 	 */
 	static public function	easeInOut () : Ease;
 	
 	/**
-	 * [static] Eases out with a power of 0 
+	 * 
 	 * @return
 	 */
 	static public function	easeOut () : Ease;
-
 	
 }
-

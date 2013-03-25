@@ -1,33 +1,32 @@
 package tween.easing;
 
 /**
- * Power0
+ * Strong
+ * Provides an easeIn, easeOut, and easeInOut with a power (or strength) of 4 which is identical to the Power4 ease.
  * @author PRASS
  */
 
-extern class Power0 
+extern class Strong 
 {
 
 	public function new() : Void; 
-
+	
 	/**
-	 * [static] Eases in with a power of 0
+	 * 
 	 * @return
 	 */
 	static public function	easeIn () : Ease;
 
 	/**
-	 * [static] Eases in and then out with a power of 0
+	 * 
 	 * @return
 	 */
 	static public function	easeInOut () : Ease;
 	
 	/**
-	 * [static] Eases out with a power of 0 
+	 * 
 	 * @return
 	 */
 	static public function	easeOut () : Ease;
-
 	
 }
-

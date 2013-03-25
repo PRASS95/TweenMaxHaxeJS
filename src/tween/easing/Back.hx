@@ -4,7 +4,6 @@ package tween.easing;
  * Back
  * @author PRASS
  */
-@:native("Back")
 extern class Back 
 {
 
