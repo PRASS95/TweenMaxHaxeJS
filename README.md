@@ -11,7 +11,7 @@
 ## Download & Set Up
 You just have to [download](https://github.com/PRASS95/TweenMaxHaxeJS/archive/master.zip) and then place the folder *tween* into your *Haxe* project source folder. Next, you have to specify which lib and/or plugins you need in your HTML file:
 ```
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
 ```	
 
@@ -22,11 +22,7 @@ Syntax is exactly the same than the original **TweeLite** / **TweenMax**.
 
 ```
 import tween.TweenMaxHaxe;
-
-/**
- * TweenMax Haxe JS
- * @author PRASS
- */
+import tween.easing.Power2;
  
 class Test 
 {
@@ -38,10 +34,12 @@ class Test
 		
 		_target = untyped $('#target');
 		
-		_tween = new TweenMaxHaxe( _target, 4, { css: { width:500, left:"500px", top:"300px", ease: Power2.easeInOut } } );
+		_tween = new TweenMaxHaxe( _target, 4, { css: { left:"500px", top:"300px"} , ease: Power2.easeInOut  } );
 		_tween.play();
+		
 		// OR
-		TweenMaxHaxe( _target, 4, { css: { width:500, left:"500px", top:"300px", ease: Power2.easeInOut } } );
+		
+		TweenMaxHaxe( _target, 4, { css: { left:"500px", top:"300px"} , ease: Power2.easeInOut  } );
 		
 	}
 }

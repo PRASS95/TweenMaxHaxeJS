@@ -33,7 +33,7 @@ class Test
 		_timer = new Timer(1000);
 		_timer.run = _onPause;
 		
-		_tween = new TweenMaxHaxe( _target, 4, { css: { width:500, left:"500px", top:"300px", ease: Power2.easeInOut } } );
+		_tween = new TweenMaxHaxe( _target, 4, { css: { width:500, left:"500px", top:"300px"} , ease: Power2.easeInOut  } );
 		_tween.play();
 		
 	}
