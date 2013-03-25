@@ -3,24 +3,56 @@
 
 ## About
 
-###TweenMax Haxe JS is an external wrapper for **TweenMax** and **TweenLite** by *GreenSock*.
+###TweenMax Haxe JS is an external wrapper for **TweenMax** and **TweenLite** by *[GreenSock](http://www.greensock.com/gsap-js/)*.
 
 * **Author**: [PRASS](http://twitter.com/PR4SS)
-* **Current version**: 0.11	
+* **Current version**: 0.12	
 
 ## Download & Set Up
-You just have to [download](https://github.com/PRASS95/TweenMaxHaxeJS/archive/master.zip) and then place the folder *tween* into your project source folder.
+You just have to [download](https://github.com/PRASS95/TweenMaxHaxeJS/archive/master.zip) and then place the folder *tween* into your *Haxe* project source folder. Next, you have to specify which lib and/or plugins you need in your HTML file:
+```
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+```	
+
+It's ready to use.
 	
 ## Usage
-The syntax is exactly the same than the original **TweenMax**. If you choose to use *TweeLite* with plugins you have to import them yourself.
+Syntax is exactly the same than the original **TweeLite** / **TweenMax**. 
+
+```
+import tween.TweenMaxHaxe;
+
+/**
+ * TweenMax Haxe JS
+ * @author PRASS
+ */
+ 
+class Test 
+{
+	
+	private var _target : Dynamic;
+	private var _tween 	: TweenMaxHaxe;
+	
+	public function new () : Void {
+		
+		_target = untyped $('#target');
+		
+		_tween = new TweenMaxHaxe( _target, 4, { css: { width:500, left:"500px", top:"300px", ease: Power2.easeInOut } } );
+		_tween.play();
+		// OR
+		TweenMaxHaxe( _target, 4, { css: { width:500, left:"500px", top:"300px", ease: Power2.easeInOut } } );
+		
+	}
+}
+```
 
 * **More samples**: [Official Greensock web site](http://www.greensock.com/gsap-js/)
 * **Documentation**: [GreenSock JavaScript API Docs](http://api.greensock.com/js/)
 	
 ## Next
 - Cover the whole API of TweenMax/TweenLite.
-- Handle all easing easing
-- Cover the TimeLine API.
+- Cover the TimeLineMax API.
 
 ## Licensing
 
