@@ -11,7 +11,7 @@
 ## Download & Set Up
 You just have to [download](https://github.com/PRASS95/TweenMaxHaxeJS/archive/master.zip) and then place the folder *tween* into your *Haxe* project source folder. Next, you have to specify which lib and/or plugins you need in your HTML file:
 ```
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
 ```	
 
