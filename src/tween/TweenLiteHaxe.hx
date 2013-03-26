@@ -3,7 +3,6 @@ import tween.core.Animation;
 
 /**
  * TweenLite for Haxe
- * v0.11
  * @author PRASS
  */
 

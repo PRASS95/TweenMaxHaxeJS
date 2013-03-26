@@ -6,7 +6,7 @@
 ###TweenMax Haxe JS is an external wrapper for **TweenMax** and **TweenLite** by *[GreenSock](http://www.greensock.com/gsap-js/)*.
 
 * **Author**: [PRASS](http://twitter.com/PR4SS)
-* **Current version**: 0.12	
+* **Current version**: 0.13	
 
 ## Download & Set Up
 You just have to [download](https://github.com/PRASS95/TweenMaxHaxeJS/archive/master.zip) and then place the folder *tween* into your *Haxe* project source folder. Next, you have to specify which lib and/or plugins you need in your HTML file:
@@ -49,10 +49,9 @@ class Test
 * **Documentation**: [GreenSock JavaScript API Docs](http://api.greensock.com/js/)
 	
 ## Next
-- Cover the whole API of TweenMax/TweenLite.
-- Cover the TimeLineMax API.
+- Cover the whole API of TweenMax.
 
 ## Licensing
 
-* TweenMax Haxe JS is released in the *public domain*. **No warranty expressed or implied. use at your own risk.**
+* TweenMax Haxe JS is released in the *public domain*. **No warranty expressed or implied. Use it at your own risk.**
 * Please check [Greensock's licensing](http://www.greensock.com/licensing/) before using.

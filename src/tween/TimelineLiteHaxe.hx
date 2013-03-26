@@ -29,7 +29,7 @@ extern class TimelineLiteHaxe extends SimpleTimeLine
 	 * @param	?baseTimeOrLabel
 	 * @return
 	 */
-    public function call(callback:Dynamic, ?params:Array<Dynamic>, ?scope:Dynamic, ?position:Float):Dynamic;
+    public function call(callbackFunc:Dynamic, ?params:Array<Dynamic>, ?scope:Dynamic, ?position:Float):Dynamic;
 	
 	/**
 	 * Empties the timeline of all tweens, timelines, and callbacks (and optionally labels too).
@@ -150,9 +150,9 @@ extern class TimelineLiteHaxe extends SimpleTimeLine
 	 * @param	?onCompleteAllScope
 	 * @return
 	 */
-    public function staggerFrom(targets:Array<Dynamic>, duration:Float, vars:Dynamic, stagger:Float, ?position:Dynamic, ?onCompleteAll:Func, ?onCompleteAllParams:Array<Dynamic>, ?onCompleteAllScope:Dynamic):Dynamic;
+    public function staggerFrom(targets:Array<Dynamic>, duration:Float, vars:Dynamic, stagger:Float, ?position:Dynamic, ?onCompleteAll:Dynamic, ?onCompleteAllParams:Array<Dynamic>, ?onCompleteAllScope:Dynamic):Dynamic;
 
-    public function staggerFromTo(targets:Array<Dynamic>, duration:Float, fromVars:Dynamic, toVars:Dynamic, stagger:Float, ?position:Dynamic, ?onCompleteAll:Func, ?onCompleteAllParams:Array<Dynamic>, ?onCompleteAllScope:Dynamic):Dynamic;
+    public function staggerFromTo(targets:Array<Dynamic>, duration:Float, fromVars:Dynamic, toVars:Dynamic, stagger:Float, ?position:Dynamic, ?onCompleteAll:Dynamic, ?onCompleteAllParams:Array<Dynamic>, ?onCompleteAllScope:Dynamic):Dynamic;
 
     public function staggerTo(targets:Array<Dynamic>, duration:Float, vars:Dynamic, stagger:Float, ?position:Dynamic, ?onCompleteAll:Dynamic, ?onCompleteAllParams:Array<Dynamic>, ?onCompleteAllScope:Dynamic):Dynamic;
 
@@ -178,6 +178,6 @@ extern class TimelineLiteHaxe extends SimpleTimeLine
 	/**
 	 * [READ-ONLY] If true, the timeline's timing mode is frames-based instead of seconds.
 	 */
-    public var usesFrames():Bool;
+    public var usesFrames : Bool;
 	
 }

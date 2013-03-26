@@ -6,6 +6,7 @@ import tween.easing.Back;
 import tween.easing.Power2;
 import tween.TweenMaxHaxe;
 
+
 /**
  * TweenMax Haxe JS
  * @author PRASS
@@ -23,7 +24,7 @@ class Test
 		untyped $(function() { new Test(); } );
 	}
 	
-	function new () : Void {
+	public function new () : Void {
 		
 		_target = untyped $('#target');
 		

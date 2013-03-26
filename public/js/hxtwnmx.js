@@ -101,13 +101,12 @@ Std.random = function(x) {
 	return Math.floor(Math.random() * x);
 }
 var Test = function() {
-	haxe.Log.trace("lol",{ fileName : "Test.hx", lineNumber : 28, className : "Test", methodName : "new"});
 	this._target = $("#target");
 	this._target.on("mouseover",$bind(this,this._over));
 	this._target.on("mouseout",$bind(this,this._out));
 	this._timer = new haxe.Timer(1000);
 	this._timer.run = $bind(this,this._onPause);
-	this._tween = new TweenMax(this._target,4,{ css : { width : 500, left : "500px", top : "300px", ease : Power2.easeInOut}});
+	this._tween = new TweenMax(this._target,4,{ css : { width : 500, left : "500px", top : "300px"}, ease : tween.easing.Power2.easeInOut});
 	this._tween.play();
 };
 Test.__name__ = true;
@@ -130,10 +129,10 @@ Test.prototype = {
 		this._timer.run = $bind(this,this._onResume);
 	}
 	,_out: function(e) {
-		TweenMax.to(this._target,.6,{ width : "200px", ease : Back.easeOut});
+		TweenMax.to(this._target,.6,{ width : "200px", ease : tween.easing.Back.easeOut});
 	}
 	,_over: function(e) {
-		TweenMax.to(this._target,.8,{ width : "300px", ease : Back.easeOut});
+		TweenMax.to(this._target,.8,{ width : "300px", ease : tween.easing.Back.easeOut});
 	}
 	,__class__: Test
 }
