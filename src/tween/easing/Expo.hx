@@ -5,6 +5,7 @@ package tween.easing;
  * 
  * @author PRASS
  */
+@:native("Expo")
 extern class Expo 
 {
 

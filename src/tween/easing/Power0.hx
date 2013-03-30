@@ -4,7 +4,7 @@ package tween.easing;
  * Power0
  * @author PRASS
  */
-
+@:native("Power0")
 extern class Power0 
 {
 

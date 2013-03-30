@@ -5,7 +5,7 @@ package tween.easing;
  * SteppedEase provides an easy way to define a specific number of steps that the transition should take.
  * @author PRASS
  */
-
+@:native("SteppedEase")
 extern class SteppedEase 
 {
 	/**

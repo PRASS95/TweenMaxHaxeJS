@@ -4,7 +4,7 @@ package tween.easing;
  * SlowMo is a configurable ease that produces a slow-motion effect.
  * @author PRASS
  */
-
+@:native("SlowMo")
 extern class SlowMo 
 {
 	/**

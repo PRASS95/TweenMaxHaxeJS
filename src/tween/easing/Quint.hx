@@ -5,7 +5,7 @@ package tween.easing;
  * Provides an easeIn, easeOut, and easeInOut with a power (or strength) of 4 which is identical to the Power4 ease.
  * @author PRASS
  */
-
+@:native("Quint")
 extern class Quint 
 {
 

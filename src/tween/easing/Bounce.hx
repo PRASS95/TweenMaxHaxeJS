@@ -5,6 +5,7 @@ package tween.easing;
  * Eases, bouncing either at the beginning (easeIn), the end (easeOut), or both (easeInOut).
  * @author PRASS
  */
+@:native("Bounce")
 extern class Bounce 
 {
 
