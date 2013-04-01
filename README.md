@@ -7,6 +7,7 @@
 
 * **Author**: [PRASS](http://twitter.com/PR4SS)
 * **Current version**: 0.13	
+* **Demo / Implementation sample**: [HardcoreSampler.com](http://hardcoresampler.com) 
 
 ## Download & Set Up
 You just have to [download](https://github.com/PRASS95/TweenMaxHaxeJS/archive/master.zip) and then place the folder *tween* into your *Haxe* project source folder. Next, you have to specify which lib and/or plugins you need in your HTML file:
@@ -48,8 +49,6 @@ class Test
 * **More samples**: [Official Greensock web site](http://www.greensock.com/gsap-js/)
 * **Documentation**: [GreenSock JavaScript API Docs](http://api.greensock.com/js/)
 	
-## Next
-- Cover the whole API of TweenMax.
 
 ## Licensing
 
