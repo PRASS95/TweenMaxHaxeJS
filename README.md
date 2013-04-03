@@ -45,7 +45,7 @@ class Test
 		
 		// OR
 		
-		TweenMaxHaxe( _target, 4, { css: { left:"500px", top:"300px"} , ease: Power2.easeInOut  } );
+		TweenMaxHaxe.to( _target, 4, { css: { left:"500px", top:"300px"} , ease: Power2.easeInOut  } );
 		
 	}
 }
