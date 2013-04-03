@@ -1,0 +1,9 @@
+<project name="TweenMaxHaxeJS" url="https://github.com/PRASS95/TweenMaxHaxeJS" license="Public">
+    <user name="PRASS"/>
+    <tag v="js"/>
+    <tag v="extern"/>
+    <tag v="tweenlite"/>
+    <tag v="tweenmax"/>
+    <description>TweenMax Haxe JS is an extern for TweenLite, TweenMax, TimeLineLite and TimeLineMax by Greensock</description>
+    <version name="0.13">First release. API v 1.9, 100% covered.</version>
+</project>

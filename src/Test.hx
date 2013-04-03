@@ -54,7 +54,7 @@ class Test
 		_timer.stop();
 		_tween.pause();
 		
-		untyped console.log( _tween.paused() );
+		trace( _tween.paused() );
 		
 		_timer = new Timer(1000);
 		_timer.run = _onResume;
@@ -64,7 +64,8 @@ class Test
 	{
 		_timer.stop();
 		_tween.resume();
-		untyped console.log( _tween.paused() );
+		
+		trace( _tween.paused() );
 	}
 	
 }
