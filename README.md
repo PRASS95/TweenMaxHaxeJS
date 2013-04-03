@@ -12,7 +12,7 @@
 ## Download & Set Up
 TweenMax Haxe JS is available on **haxelib**:
 ```
-haxelib install TweenMaxHaxeJS`
+haxelib install TweenMaxHaxeJS
 ```
 
 You can also [download](https://github.com/PRASS95/TweenMaxHaxeJS/archive/master.zip) and then place the folder *tween* into your *Haxe* project source folder. Next, you have to specify which lib and/or plugins you need in your HTML file:
