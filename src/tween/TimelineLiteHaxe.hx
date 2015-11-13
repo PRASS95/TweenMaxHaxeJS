@@ -11,6 +11,9 @@ import tween.core.SimpleTimeLine;
 extern class TimelineLiteHaxe extends SimpleTimeLine 
 {
 	
+
+	public function new();
+	
 	/**
 	 * Adds a label to the timeline, making it easy to mark important positions/times.
 	 * @param	label
@@ -53,8 +56,8 @@ extern class TimelineLiteHaxe extends SimpleTimeLine
 	 */
     static public function exportRoot(?vars:Dynamic, omitDelayedCalls:Bool = true):TimelineLiteHaxe;
 	
-    public function from(target:Dynamic, duration:Float, vars:Dynamic, offset:Float, ?baseTimeOrLabel:Dynamic):Dynamic;
-    public function fromTo(target:Dynamic, duration:Float, fromVars:Dynamic, toVars:Dynamic, offset:Float, ?baseTimeOrLabel:Dynamic):Dynamic;
+    public function from(target:Dynamic, duration:Float, ?vars:Dynamic, ?offset:Dynamic, ?baseTimeOrLabel:Dynamic):Dynamic;
+    public function fromTo(target:Dynamic, duration:Float, ?fromVars:Dynamic, ?toVars:Dynamic, ?offset:Float, ?baseTimeOrLabel:Dynamic):Dynamic;
 	
 	/**
 	 * Returns an array containing all the tweens and/or timelines nested in this timeline.
@@ -162,11 +165,11 @@ extern class TimelineLiteHaxe extends SimpleTimeLine
 	 * this is a convenience method that accomplishes exactly the same thing as add( TweenLite.to(...) ) but with less code.
 	 * @param	target
 	 * @param	duration
-	 * @param	properties
+	 * @param	vars
 	 * @param	position
 	 * @return
 	 */
-    public function to(target:Dynamic, duration:Float, properties:Dynamic, position:Dynamic):Dynamic;
+     public function to(target:Dynamic, duration:Float, ?vars:Dynamic, ?offset:Dynamic):Dynamic;
 	
 	/**
 	 * Gets the timeline's total duration or, if used as a setter, adjusts the timeline's timeScale to fit it within the specified duration.

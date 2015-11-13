@@ -9,7 +9,7 @@ package tween;
 extern class TimelineMaxHaxe extends TimelineLiteHaxe 
 {
 
-	public function new( vars: Dynamic ) : Void ; 
+	public function new( ?vars: Dynamic ) : Void ; 
 	
 	/**
 	 * Inserts a callback at a particular position.

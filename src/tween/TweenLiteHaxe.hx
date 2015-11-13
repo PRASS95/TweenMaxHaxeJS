@@ -15,7 +15,7 @@ extern class TweenLiteHaxe extends Animation
 	 * @param	duration
 	 * @param	vars
 	 */
-	public function new(target:Dynamic,duration:Float,vars:Dynamic):Void;
+	public function new(target:Dynamic,duration:Float,vars:Dynamic);
   
     /**
      * 
